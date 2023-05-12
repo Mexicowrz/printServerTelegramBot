@@ -1,0 +1,16 @@
+{
+  "lock": "./deno.lock",
+  "imports": {
+    "/": "./src/",
+    "./": "./",
+    "std/": "https://deno.land/std@0.184.0/",
+    "dotenv": "https://deno.land/x/dotenv@v3.2.2/load.ts",
+    "grammy": "https://deno.land/x/grammy@v1.16.0/mod.ts",
+    "file_extension": "https://deno.land/x/file_extension/mod.ts"
+  },
+  "tasks": {
+    "start": "deno run --allow-run --allow-read --allow-write --allow-net --allow-env /index.ts",
+    "dev": "deno run --allow-run --allow-read --allow-write --allow-net --allow-env --watch /index.ts",
+    "compile": "deno compile --allow-run --allow-read --allow-write --allow-net --allow-env --output $PWD/bin/printbot $PWD/src/index.ts"
+  }
+}
