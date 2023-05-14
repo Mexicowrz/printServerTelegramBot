@@ -23,4 +23,4 @@ Compile:
 
 Start telegram bot:
 
-```BOT_TOKEN=YOU-TOKEN ALLOW_USERS=ALLOW_USER_IDS ./bin/printbot```
+```BOT_TOKEN=YOU-TOKEN ALLOW_USERS=COMMA-SEPARATED-IDS ./bin/printbot```
